@@ -1,12 +1,16 @@
 package org.hfeng.qs;
 
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class ActionTest {
     @Test
     public void testQuickStart() {
-        System.out.println("=======================");
-        System.out.println("Action Test Start!");
-        System.out.println("=======================");
+
+        ApplicationContext ctx = new FileSystemXmlApplicationContext("bean.xml");
+        Action action = (Action)ctx.getBean("TheAction");
+        System.out.println(action.execute("Rod Johnson"));
+        System.out.println("hello");
     }
 }
