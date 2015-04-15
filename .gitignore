@@ -6,3 +6,10 @@ gradle-app.setting
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
+
+# IDE stuff
+.idea/
+gradle/
+gradlew
+gradlew.bat
+spring-in-action.iml
