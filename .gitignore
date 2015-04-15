@@ -9,7 +9,10 @@ gradle-app.setting
 
 # IDE stuff
 .idea/
+out/
+*.ipr
+*.iws
+*.iml
 gradle/
 gradlew
 gradlew.bat
-spring-in-action.iml
