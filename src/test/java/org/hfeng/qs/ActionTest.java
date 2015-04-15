@@ -11,6 +11,5 @@ public class ActionTest {
         ApplicationContext ctx = new FileSystemXmlApplicationContext("bean.xml");
         Action action = (Action)ctx.getBean("TheAction");
         System.out.println(action.execute("Rod Johnson"));
-        System.out.println("hello");
     }
 }
