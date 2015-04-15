@@ -1,0 +1,9 @@
+<beans>
+    <description>Spring Quick Start</description>
+    <bean id="TheAction"
+          class="org.hfeng.qs.UpperAction">
+        <property name="message">
+            <value>Hello</value>
+        </property>
+    </bean>
+</beans>
